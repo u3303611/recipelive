@@ -1,0 +1,747 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>레시피라이브</title>
+
+
+    <link href="css/shopping.css" type="text/css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
+    <script type="text/javascript">
+        /*2차메뉴 슬라이드 다운*/
+        $(document).ready(function() {
+            $('.dp2').hide();
+
+            $('.gnb>li').mouseover(function() {
+                $(this).children('.dp2').stop().slideDown();
+            });
+
+            $('.gnb>li').mouseout(function() {
+                $(this).children('.dp2').stop().slideUp();
+            });
+
+          /*이미지 슬라이드*/
+            $('#visual').bxSlider({
+                auto: true,
+                slideWidth: 1200
+            });
+           
+
+                 
+            
+            /*사이드 메뉴*/
+            $('.item').hide();
+            
+              $('.hidden2').click(function(){
+            $('.item').slideToggle();          
+            });
+               
+            
+
+           /*히든 슬라이드 _1:1상담*/
+            
+              $('.closs_button').click(function(){
+            $('#cs').animate ({right:'0px'}); 
+                    
+            });
+                         
+              $('.closs_button').click(function(){
+            $('.closs_button').hide(); 
+                    
+            });
+            
+                 $('.closs_button2').click(function(){
+            $('#cs').animate ({right:'-700px'}); 
+                    
+            });
+                         
+              $('.closs_button2').click(function(){
+            $('.closs_button').show(); 
+                    
+            });
+            
+   
+               
+                              
+        });
+        
+
+    </script>
+
+</head>
+
+    
+    
+<body>
+    
+<!--cs---------------------------------------->
+    <section id="cs">
+        <div class="closs_button"><img src="images/main/phone_icon-01.png" alt="닫기버튼" width="60px"></div>
+        
+          
+        
+   <div class="cs_top"><p>레시피라이브 1:1 상담</p></div>
+
+        
+             
+        <div class="cs_table">
+            
+     
+<h1>무엇을 상담해 드릴까요?</h1>
+<select class="select">
+<option>상품문의</option>
+<option>배송문의</option>
+<option>반품문의</option>
+</select>
+   <h2>상담 내용을 입력해 주세요</h2>
+    <textarea></textarea>  
+    <input type="file" class="file">
+    <input type="submit" value="전송" class="submit">
+    <input type="reset" class="reset">
+            
+     
+            <p>고객센터 : 1577-1234</p>
+            <div class="cs_bottom"></div>
+      </div>
+                 <div class="closs_button2"><img src="images/main/phone_icon-01.png" alt="닫기버튼" width="60px"></div>
+    </section>
+    
+    
+        
+    <!--사이드메뉴------------------------------------->
+<div id="hidden_menu">
+    <div class="hidden_box">
+       
+    <div class="hidden1"><p><a href="basket.html"><img src="images/main/hiden_icon1.png" alt="장바구니 아이콘"><br>장바구니<br>2</a></p></div>
+        
+    <div class="hidden2"><p><img src="images/main/hiden_icon2.png" alt="시계 아이콘"><br>최근본상품</p>
+        <div class="item">
+        <img src="images/main/img1.png" alt="#" width="60px">
+        <img src="images/main/img2.png" alt="#" width="60px">
+        <img src="images/main/img3.png" alt="#" width="60px">
+        <img src="images/main/img4.png" alt="#" width="60px">
+        </div></div>
+        
+    <div class="top"><p><a href="#top">TOP</a></p></div>
+    <div class="down"><p><a href="#footer">DOWN</a></p></div>
+    
+</div>
+    </div>
+    
+    <!--시작!!--------------------->
+    
+    
+ 
+<div class="top_bg">
+    <img src="images/sub/top_bg.png" alt="bg" height="150px" width="100%">
+    <div class="bg"></div>
+    <section class="tatle_top"><p>MENU</p></section>
+    
+   
+    
+    
+    </div>
+        
+ 
+    
+    <header id="header">
+   
+    <section class="header_inner">
+ 
+    <div class="menu_bar">
+      <ul class="txt1">
+    <li><a href="#">한식</a></li>
+    <li><a href="#">중식</a></li>
+    <li><a href="#">일식</a></li>
+    <li><a href="#">양식</a></li>
+    <li><a href="#">디저트</a></li>
+    <li><a href="#">손님접대용</a></li>
+        </ul>        
+    
+        
+        
+     <div class="aaaa">
+     <ul class="top_txt">
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">마이페이지</a></li>
+                <li><a href="#">Q&amp;A</a></li>
+                <li><a href="#">공지사항</a></li>
+            </ul>
+    </div>    
+        
+        
+    </div> 
+        
+    <div class="menu_bar2">
+    <ul class="txt2">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#">Menu</a></li>
+    <li><a href="#">한식</a></li>
+        </ul>    
+    </div>      
+    
+    
+    </section>
+    </header>
+
+    
+
+    
+    <div id="contents">
+    <div class="contents_inner">
+        
+        
+        <div class="con_left">
+    <ul>
+        <li><a href="index.html"><img src="images/sub/main_logo.png" alt="로고" width="70%"></a></li>
+        <li><a href="#">찌개 &amp; 국</a></li>
+        <li><a href="#">밑반찬</a></li>
+        <li><a href="#">육 류</a></li>
+        <li><a href="#">생선 &amp; 해산물</a></li>
+        <li><a href="#">볶음밥 &amp; 덮밥</a></li>
+        <li><a href="#">면 요리</a></li>
+     
+        <li><a href="#"><p>BANK INFO</p>
+            <img src="images/sub/nh_logo.png" alt="농협로고">농협 351-1234-5678-90<br>예금주 : 레시피라이브</a></li>
+         <li><a href="#"></a></li>
+        </ul>
+</div>
+        
+<!--메뉴영역 오른쪽------------------------------>
+
+        <div class="right">
+  <div id="menu_line1">
+    <ul class="menu">
+      <li><a href="#"><img src="images/sub/sub_menu_1.png" alt="차돌된장찌개" width="217px"></a>
+            <div class="slid_bg"><p>차돌박이된장찌개<br><span>5,000<span>원</span></span></p>
+        <h1><img src="images/sub/star.png" alt="별점"> (1,059명)</h1></div>
+        <div class="menu_bg"></div>
+        
+         <div class="slid_bg1">
+        <div class="heart"><img src="images/sub/heart3.png"alt="찜하기 " width="30px"><p>찜하기</p></div>     
+        
+             <div class="center_line"></div>  
+           
+            <div class="basket"><img src="images/sub/basket3.png"alt="장바구니담기" width="30px"><p>장바구니</p></div>
+    
+         </div>
+</li>
+      
+        
+   <li><a href="#"><img src="images/sub/sub_menu_2.png" alt="꽃게된장찌개" width="217px"></a>
+            <div class="slid_bg"><p>꽃게된장찌개<br><span>4,500<span>원</span></span></p>
+        <h1><img src="images/sub/star.png" alt="별점"> (479명)</h1></div>
+        <div class="menu_bg"></div>
+        
+         <div class="slid_bg1" >
+        <div class="heart"><img src="images/sub/heart3.png"alt="찜하기 " width="30px"><p>찜하기</p></div>     
+        
+             <div class="center_line"></div>  
+           
+            <div class="basket"><img src="images/sub/basket3.png"alt="장바구니담기" width="30px"><p>장바구니</p></div>
+    
+       </div>
+</li>
+    
+         <li><a href="#"><img src="images/sub/sub_menu_3.png" alt="청국장" width="217px"></a>
+            <div class="slid_bg"><p>청국장<br><span>4,000<span>원</span></span></p>
+        <h1><img src="images/sub/star.png" alt="별점"> (259명)</h1></div>
+        <div class="menu_bg"></div>
+        
+         <div class="slid_bg1">
+        <div class="heart"><img src="images/sub/heart3.png"alt="찜하기 " width="30px"><p>찜하기</p></div>     
+        
+             <div class="center_line"></div>  
+           
+            <div class="basket"><img src="images/sub/basket3.png"alt="장바구니담기" width="30px"><p>장바구니</p></div>
+    
+             </div>
+</li>
+        
+        
+    
+         <li><a href="#"><img src="images/sub/sub_menu_4.png" alt="잡탕찌개" width="217px"></a>
+            <div class="slid_bg"><p>잡탕찌게개<br><span>4,500<span>원</span></span></p>
+        <h1><img src="images/sub/star.png" alt="별점"> (459명)</h1></div>
+        <div class="menu_bg"></div>
+        
+         <div class="slid_bg1">
+        <div class="heart"><img src="images/sub/heart3.png"alt="찜하기 " width="30px"><p>찜하기</p></div>     
+        
+             <div class="center_line"></div>  
+           
+            <div class="basket"><img src="images/sub/basket3.png"alt="장바구니담기" width="30px"><p>장바구니</p></div>
+    
+             </div>
+</li>     
+        
+   
+    </ul>    
+ </div>
+
+     
+      
+  <div id="menu_line2">
+    <ul class="menu">
+      <li><a href="#"><img src="images/sub/sub_menu_5.png" alt="씰씨래기된장찌개" width="217px"></a>
+            <div class="slid_bg"><p>씨래기된장찌개<br><span>4,000<span>원</span></span></p>
+        <h1><img src="images/sub/star.png" alt="별점"> (159명)</h1></div>
+        <div class="menu_bg"></div>
+        
+         <div class="slid_bg1">
+        <div class="heart"><img src="images/sub/heart3.png"alt="찜하기 " width="30px"><p>찜하기</p></div>     
+        
+             <div class="center_line"></div>  
+           
+            <div class="basket"><img src="images/sub/basket3.png"alt="장바구니담기" width="30px"><p>장바구니</p></div>
+    
+          </div>
+</li>
+      
+        
+   <li><a href="#"><img src="images/sub/sub_menu_6.png" alt="묵은지김치찜" width="217px"></a>
+            <div class="slid_bg"><p>묵은지김치찜<br><span>4,500<span>원</span></span></p>
+        <h1><img src="images/sub/star.png" alt="별점"> (679명)</h1></div>
+        <div class="menu_bg"></div>
+        
+         <div class="slid_bg1">
+        <div class="heart"><img src="images/sub/heart3.png"alt="찜하기 " width="30px"><p>찜하기</p></div>     
+        
+             <div class="center_line"></div>  
+           
+            <div class="basket"><img src="images/sub/basket3.png"alt="장바구니담기" width="30px"><p>장바구니</p></div>
+    
+       </div>
+</li>
+    
+         <li><a href="#"><img src="images/sub/sub_menu_7.png" alt="참치김치찌개" width="217px"></a>
+            <div class="slid_bg"><p>참치김치찌개<br><span>4,500<span>원</span></span></p>
+        <h1><img src="images/sub/star.png" alt="별점"> (1,011명)</h1></div>
+        <div class="menu_bg"></div>
+        
+         <div class="slid_bg1">
+        <div class="heart"><img src="images/sub/heart3.png"alt="찜하기 " width="30px"><p>찜하기</p></div>     
+        
+             <div class="center_line"></div>  
+           
+            <div class="basket"><img src="images/sub/basket3.png"alt="장바구니담기" width="30px"><p>장바구니</p></div>
+    
+             </div>
+</li>
+        
+        
+    
+         <li><a href="#"><img src="images/sub/sub_menu_8.png" alt="꽁치김치찌개" width="217px"></a>
+            <div class="slid_bg"><p>꽁치김치찌개<br><span>4,500<span>원</span></span></p>
+        <h1><img src="images/sub/star.png" alt="별점"> (259명)</h1></div>
+        <div class="menu_bg"></div>
+        
+         <div class="slid_bg1">
+        <div class="heart"><img src="images/sub/heart3.png"alt="찜하기 " width="30px"><p>찜하기</p></div>     
+        
+             <div class="center_line"></div>  
+           
+            <div class="basket"><img src="images/sub/basket3.png"alt="장바구니담기" width="30px"><p>장바구니</p></div>
+    
+             </div>
+</li>     
+        
+   
+    </ul>    
+ </div>        
+        
+ 
+      
+  <div id="menu_line3">
+      <ul class="menu">
+      <li><a href="#"><img src="images/sub/sub_menu_9.png" alt="고추장찌개" width="217px"></a>
+            <div class="slid_bg"><p>고추장찌개<br><span>4,500<span>원</span></span></p>
+        <h1><img src="images/sub/star.png" alt="별점"> (259명)</h1></div>
+        <div class="menu_bg"></div>
+        
+         <div class="slid_bg1">
+        <div class="heart"><img src="images/sub/heart3.png"alt="찜하기 " width="30px"><p>찜하기</p></div>     
+        
+             <div class="center_line"></div>  
+           
+            <div class="basket"><img src="images/sub/basket3.png"alt="장바구니담기" width="30px"><p>장바구니</p></div>
+    
+          </div>
+</li>
+      
+        
+   <li><a href="#"><img src="images/sub/sub_menu_10.png" alt="얼큰순두부" width="217px"></a>
+            <div class="slid_bg"><p>얼큰순두부<br><span>4,000<span>원</span></span></p>
+        <h1><img src="images/sub/star.png" alt="별점"> (1,179명)</h1></div>
+        <div class="menu_bg"></div>
+        
+         <div class="slid_bg1">
+        <div class="heart"><img src="images/sub/heart3.png"alt="찜하기 " width="30px"><p>찜하기</p></div>     
+        
+             <div class="center_line"></div>  
+           
+            <div class="basket"><img src="images/sub/basket3.png"alt="장바구니담기" width="30px"><p>장바구니</p></div>
+    
+       </div>
+</li>
+    
+         <li><a href="#"><img src="images/sub/sub_menu_11.png" alt="부대찌개" width="217px"></a>
+            <div class="slid_bg"><p>부대찌개<br><span>4,500<span>원</span></span></p>
+        <h1><img src="images/sub/star.png" alt="별점"> (415명)</h1></div>
+        <div class="menu_bg"></div>
+        
+         <div class="slid_bg1">
+        <div class="heart"><img src="images/sub/heart3.png"alt="찜하기 " width="30px"><p>찜하기</p></div>     
+        
+             <div class="center_line"></div>  
+           
+            <div class="basket"><img src="images/sub/basket3.png"alt="장바구니담기" width="30px"><p>장바구니</p></div>
+    
+             </div>
+</li>
+        
+        
+    
+         <li><a href="#"><img src="images/sub/sub_menu_12.png" alt="씨래기된장찌개" width="217px"></a>
+            <div class="slid_bg"><p>알탕<br><span>4,000<span>원</span></span></p>
+        <h1><img src="images/sub/star.png" alt="별점"> (359명)</h1></div>
+        <div class="menu_bg"></div>
+        
+         <div class="slid_bg1">
+        <div class="heart"><img src="images/sub/heart3.png"alt="찜하기 " width="30px"><p>찜하기</p></div>     
+        
+             <div class="center_line"></div>  
+           
+            <div class="basket"><img src="images/sub/basket3.png"alt="장바구니담기" width="30px"><p>장바구니</p></div>
+    
+             </div>
+</li>     
+        
+   
+    </ul>    
+ </div>        
+                
+
+    
+  <div id="menu_line4">
+   <ul class="menu">
+      <li><a href="#"><img src="images/sub/sub_menu_13.png" alt="소고기미역국" width="217px"></a>
+            <div class="slid_bg"><p>소고기미역국<br><span>4,500<span>원</span></span></p>
+        <h1><img src="images/sub/star.png" alt="별점"> (359명)</h1></div>
+        <div class="menu_bg"></div>
+        
+         <div class="slid_bg1">
+        <div class="heart"><img src="images/sub/heart3.png"alt="찜하기 " width="30px"><p>찜하기</p></div>     
+        
+             <div class="center_line"></div>  
+           
+            <div class="basket"><img src="images/sub/basket3.png"alt="장바구니담기" width="30px"><p>장바구니</p></div>
+    
+          </div>
+</li>
+      
+        
+   <li><a href="#"><img src="images/sub/sub_menu_14.png" alt="북엇국" width="217px"></a>
+            <div class="slid_bg"><p>북엇국<br><span>3,800<span>원</span></span></p>
+        <h1><img src="images/sub/star.png" alt="별점"> (179명)</h1></div>
+        <div class="menu_bg"></div>
+        
+         <div class="slid_bg1">
+        <div class="heart"><img src="images/sub/heart3.png"alt="찜하기 " width="30px"><p>찜하기</p></div>     
+        
+             <div class="center_line"></div>  
+           
+            <div class="basket"><img src="images/sub/basket3.png"alt="장바구니담기" width="30px"><p>장바구니</p></div>
+    
+       </div>
+</li>
+    
+         <li><a href="#"><img src="images/sub/sub_menu_15.png" alt="김치콩나물국" width="217px"></a>
+            <div class="slid_bg"><p>김치콩나물국<br><span>3,800<span>원</span></span></p>
+        <h1><img src="images/sub/star.png" alt="별점"> (415명)</h1></div>
+        <div class="menu_bg"></div>
+        
+         <div class="slid_bg1">
+        <div class="heart"><img src="images/sub/heart3.png"alt="찜하기 " width="30px"><p>찜하기</p></div>     
+        
+             <div class="center_line"></div>  
+           
+            <div class="basket"><img src="images/sub/basket3.png"alt="장바구니담기" width="30px"><p>장바구니</p></div>
+    
+             </div>
+</li>
+        
+        
+    
+         <li><a href="#"><img src="images/sub/sub_menu_16.png" alt="소고기뭇국" width="217px"></a>
+            <div class="slid_bg"><p>소고기뭇국<br><span>3,800<span>원</span></span></p>
+        <h1><img src="images/sub/star.png" alt="별점"> (559명)</h1></div>
+        <div class="menu_bg"></div>
+        
+         <div class="slid_bg1">
+        <div class="heart"><img src="images/sub/heart3.png"alt="찜하기 " width="30px"><p>찜하기</p></div>     
+        
+             <div class="center_line"></div>  
+           
+            <div class="basket"><img src="images/sub/basket3.png"alt="장바구니담기" width="30px"><p>장바구니</p></div>
+    
+             </div>
+</li>     
+        
+   
+    </ul>    
+ </div>   
+
+        
+<div id="menu_line5">
+       <ul class="menu">
+      <li><a href="#"><img src="images/sub/sub_menu_17.png" alt="근대된장국" width="217px"></a>
+            <div class="slid_bg"><p>근대된장국<br><span>3,800<span>원</span></span></p>
+        <h1><img src="images/sub/star.png" alt="별점"> (57명)</h1></div>
+        <div class="menu_bg"></div>
+        
+         <div class="slid_bg1">
+        <div class="heart"><img src="images/sub/heart3.png"alt="찜하기 " width="30px"><p>찜하기</p></div>     
+        
+             <div class="center_line"></div>  
+           
+            <div class="basket"><img src="images/sub/basket3.png"alt="장바구니담기" width="30px"><p>장바구니</p></div>
+    
+          </div>
+</li>
+      
+        
+   <li><a href="#"><img src="images/sub/sub_menu_18.png" alt="사골만둣국" width="217px"></a>
+            <div class="slid_bg"><p>사골만둣국<br><span>4,000<span>원</span></span></p>
+        <h1><img src="images/sub/star.png" alt="별점"> (379명)</h1></div>
+        <div class="menu_bg"></div>
+        
+         <div class="slid_bg1">
+        <div class="heart"><img src="images/sub/heart3.png"alt="찜하기 " width="30px"><p>찜하기</p></div>     
+        
+             <div class="center_line"></div>  
+           
+            <div class="basket"><img src="images/sub/basket3.png"alt="장바구니담기" width="30px"><p>장바구니</p></div>
+    
+       </div>
+</li>
+    
+         <li><a href="#"><img src="images/sub/sub_menu_19.png" alt="김치콩나물국" width="217px"></a>
+            <div class="slid_bg"><p>바지락탕<br><span>4,000<span>원</span></span></p>
+        <h1><img src="images/sub/star.png" alt="별점"> (115명)</h1></div>
+        <div class="menu_bg"></div>
+        
+         <div class="slid_bg1">
+        <div class="heart"><img src="images/sub/heart3.png"alt="찜하기 " width="30px"><p>찜하기</p></div>     
+        
+             <div class="center_line"></div>  
+           
+            <div class="basket"><img src="images/sub/basket3.png"alt="장바구니담기" width="30px"><p>장바구니</p></div>
+    
+             </div>
+</li>
+        
+        
+    
+         <li><a href="#"><img src="images/sub/sub_menu_20.png" alt="소고기뭇국" width="217px"></a>
+            <div class="slid_bg"><p>어묵탕<br><span>3,500<span>원</span></span></p>
+        <h1><img src="images/sub/star.png" alt="별점"> (79명)</h1></div>
+        <div class="menu_bg"></div>
+        
+         <div class="slid_bg1">
+        <div class="heart"><img src="images/sub/heart3.png"alt="찜하기 " width="30px"><p>찜하기</p></div>     
+        
+             <div class="center_line"></div>  
+           
+            <div class="basket"><img src="images/sub/basket3.png"alt="장바구니담기" width="30px"><p>장바구니</p></div>
+    
+             </div>
+</li>     
+        
+   
+    </ul>
+ </div>                
+        
+        
+<div id="menu_line6">
+           <ul class="menu">
+      <li><a href="#"><img src="images/sub/sub_menu_21.png" alt="동태탕" width="217px"></a>
+            <div class="slid_bg"><p>동태탕<br><span>4,000<span>원</span></span></p>
+        <h1><img src="images/sub/star.png" alt="별점"> (257명)</h1></div>
+        <div class="menu_bg"></div>
+        
+         <div class="slid_bg1">
+        <div class="heart"><img src="images/sub/heart3.png"alt="찜하기 " width="30px"><p>찜하기</p></div>     
+        
+             <div class="center_line"></div>  
+           
+            <div class="basket"><img src="images/sub/basket3.png"alt="장바구니담기" width="30px"><p>장바구니</p></div>
+    
+          </div>
+</li>
+      
+        
+   <li><a href="#"><img src="images/sub/sub_menu_22.png" alt="짬뽕탕" width="217px"></a>
+            <div class="slid_bg"><p>짬뽕탕<br><span>4,000<span>원</span></span></p>
+        <h1><img src="images/sub/star.png" alt="별점"> (579명)</h1></div>
+        <div class="menu_bg"></div>
+        
+         <div class="slid_bg1">
+        <div class="heart"><img src="images/sub/heart3.png"alt="찜하기 " width="30px"><p>찜하기</p></div>     
+        
+             <div class="center_line"></div>  
+           
+            <div class="basket"><img src="images/sub/basket3.png"alt="장바구니담기" width="30px"><p>장바구니</p></div>
+    
+       </div>
+</li>
+    
+         <li><a href="#"><img src="images/sub/sub_menu_23.png" alt="김치콩나물국" width="217px"></a>
+            <div class="slid_bg"><p>쑥된장국<br><span>3,500<span>원</span></span></p>
+        <h1><img src="images/sub/star.png" alt="별점"> (115명)</h1></div>
+        <div class="menu_bg"></div>
+        
+         <div class="slid_bg1">
+        <div class="heart"><img src="images/sub/heart3.png"alt="찜하기 " width="30px"><p>찜하기</p></div>     
+        
+             <div class="center_line"></div>  
+           
+            <div class="basket"><img src="images/sub/basket3.png"alt="장바구니담기" width="30px"><p>장바구니</p></div>
+    
+             </div>
+</li>
+        
+        
+    
+         <li><a href="#"><img src="images/sub/sub_menu_24.png" alt="매생이국" width="217px"></a>
+            <div class="slid_bg"><p>매생이국<br><span>3,500<span>원</span></span></p>
+        <h1><img src="images/sub/star.png" alt="별점"> (279명)</h1></div>
+        <div class="menu_bg"></div>
+        
+         <div class="slid_bg1">
+        <div class="heart"><img src="images/sub/heart3.png"alt="찜하기 " width="30px"><p>찜하기</p></div>     
+        
+             <div class="center_line"></div>  
+           
+            <div class="basket"><img src="images/sub/basket3.png"alt="장바구니담기" width="30px"><p>장바구니</p></div>
+    
+             </div>
+</li>     
+        
+   
+    </ul>
+ </div>             
+   <hr>
+            <div style="height: 120px"></div>
+
+                    <ul class="number">
+        <li><a href="#">&lang;</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">&hellip;</a></li>
+        <li><a href="#">&rang;</a></li>
+        </ul>
+    
+
+       
+
+        </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    <footer id="footer">
+        <div class="footer_inner">
+            <div class="left">
+                <a href="index.html"><img src="images/main/footer_logo.png" alt="풋터로고"></a>
+                <address>
+                    대표이사 : 홍 길 동 / 서울특별시 강남구 삼성로 518<br>
+                    개인정보관리 책임자 : recipe live 지원본부 김 지 훈 / 대표번호 : 1899-1234<br>
+                    대표메일주소 : recipelive.gmail.com / Tel : 02-123-4567 / Fax : 02-123-4568<br>
+                    통신판매업신고 : 제2017-서울강남-02297호<br>
+                    사업자등록번호 : 138-85-1961 / 사업자정보 확인<br>
+                    <br><br>
+
+                    copyright ⓒ recipelive design
+
+                </address>
+            </div>
+
+<div class="footer_right">
+            <div class="footer_icon1">
+                <img src="images/main/footer_icon1.png" alt="아이콘1" width="90px" height="90px">
+                <p><span>친절상담<br>
+                        1577-1234</span><br>평일:09:30~18:00<br>
+                    (점심시간:12:30~13:30)<br>
+                    토요일:09:30~12:30<br>
+                    일요일,공휴일 휴무</p>
+            </div>
+            <div class="footer_icon2">
+                <img src="images/main/footer_icon2.png" alt="아이콘2" width="90px" height="90px">
+                <p><span>개인정보<br>처리방침<br>&<br>이용약관</span><br><span class="pp1"><a href="">자세히보기</a></span></p>
+            </div>
+
+
+
+            <div class="footer_icon3">
+                <img src="images/main/footer_icon3.png" alt="아이콘3" width="90px" height="90px">
+                <p><span>취소<br>&<br>환불규정</span><br><br><sapn class="pp2"><a href="">자세히보기</a></sapn></p>
+            </div>
+
+
+            <div class="footer_icon4">
+                <img src="images/main/footer_icon4.png" alt="아이콘4" width="90px" height="90px">
+                <p><span>배송안내</span><br>배송 불가능한 지역이 <br>있으니 주문전 확인, <br>문의 바랍니다<br><span class="pp3"><a href="#">자세히보기</a></span></p>
+
+            </div>
+</div>
+
+        </div>
+
+    </footer>
+
+  
+    </body>
+ 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

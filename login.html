@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>레시피라이브</title>
+
+
+    <link href="css/login.css" type="text/css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
+    <script type="text/javascript">
+        /*2차메뉴 슬라이드 다운*/
+        $(document).ready(function() {
+            $('.dp2').hide();
+
+            $('.gnb>li').mouseover(function() {
+                $(this).children('.dp2').stop().slideDown();
+            });
+
+            $('.gnb>li').mouseout(function() {
+                $(this).children('.dp2').stop().slideUp();
+            });
+
+
+            $('#visual').bxSlider({
+                auto: true,
+                slideWidth: 1200
+            });
+
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 500) {
+                    $("#gotop").fadeIn();
+                } else {
+                    $("#gotop").fadeOut();
+                }
+            });
+
+        });
+
+    </script>
+
+</head>
+
+<body>
+<section id="login">
+<section class="login_inner">
+
+<div class="container">
+<h1><a href="index.html"><img src="images/main/main_logo.png" alt="로고" width="22%"></a></h1>
+<h2><img src="images/sub/login.png" alt="로그인 메인 이미지"></h2>
+
+<form>
+  <div class="login2">
+  <div class="left">
+   <p class="id">ID</p><input type="text" class="id_text"> 
+     
+   <p class="pw">Password</p><input type="password" maxlength="12" class="password">
+   </div>
+   
+   <div class="right">
+   <input type="button" value="로그인" class="login_button">
+   </div>
+   
+   <div class="buttom">
+       <input type="checkbox" class="id_save">
+      <p><a href="#">아이디저장</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">ID/PW 찾기</a>&nbsp;&nbsp;<a href="#">회원가입</a></p>  
+     
+    </div>
+    </div>
+    </form>
+    </div>
+</section>        
+</section>
+
+
+</body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,672 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+ 
+    <title>레시피라이브</title>
+
+
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
+    <script type="text/javascript">
+        /*2차메뉴 슬라이드 다운*/
+        $(document).ready(function() {
+            $('.dp2').hide();
+
+            $('.gnb>li').mouseover(function() {
+                $(this).children('.dp2').stop().slideDown();
+            });
+
+            $('.gnb>li').mouseout(function() {
+                $(this).children('.dp2').stop().slideUp();
+            });
+
+          /*이미지 슬라이드*/
+            $('#visual').bxSlider({
+                auto: true,
+                slideWidth: 1200
+            });
+           
+
+                 
+            
+            /*사이드 메뉴*/
+            $('.item').hide();
+            
+              $('.hidden2').click(function(){
+            $('.item').slideToggle();          
+            });
+               
+            
+
+           /*히든 슬라이드 _1:1상담*/
+            
+              $('.closs_button').click(function(){
+            $('#cs').animate ({right:'0px'}); 
+                    
+            });
+                         
+              $('.closs_button').click(function(){
+            $('.closs_button').hide(); 
+                    
+            });
+            
+                 $('.closs_button2').click(function(){
+            $('#cs').animate ({right:'-700px'}); 
+                    
+            });
+                         
+              $('.closs_button2').click(function(){
+            $('.closs_button').show(); 
+                    
+            });
+            
+            
+            
+            
+        });
+        
+
+    </script>
+
+</head>
+
+<body>
+
+    
+    
+    
+    <div class="top_bg"></div>
+
+    <div id="top">
+        <div class="top_inner">
+            <h1><a href="index.html"><img src="images/main/main_logo.png" alt="logo" width="15%"></a></h1>
+
+            <ul class="top_txt">
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">마이페이지</a></li>
+                <li><a href="#">Q&amp;A</a></li>
+                <li><a href="#">공지사항</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+    <header id="header">
+        <div class="header_inner">
+
+
+
+            <ul class="gnb">
+                <li><a href="index.html">RECIPE LIVE</a>
+                    <ul class="dp2">
+                        <li><a href="#">브랜드소개</a></li>
+                        <li><a href="#">회사연혁</a></li>
+                        <li><a href="#">CEO인사말</a></li>
+                        <li><a href="#">오시는 길</a></li>
+                    </ul>
+                </li>
+                <li><a href="shopping.html">MENU</a>
+                    <ul class="dp2">
+                        <li><a href="#">한식</a></li>
+                        <li><a href="#">중식</a></li>
+                        <li><a href="#">일식</a></li>
+                        <li><a href="#">양식</a></li>
+                        <li><a href="#">디저트</a></li>
+                        <li><a href="#">손님접대용</a></li>
+                    </ul>
+                </li>
+                <li><a href="event.html">EVENT</a>
+                    <ul class="dp2">
+                        <li><a href="#">출석체크</a></li>
+                        <li><a href="#">포토후기</a></li>
+                        <li><a href="#">앱 다운로드</a></li>
+                      
+                     
+                    </ul>
+                </li>
+                <li><a href="basket.html"><span>CART</span></a>
+                    <ul class="dp2">
+                        <li><a href="#">장바구니</a></li>
+                        <li><a href="#">위시리스트</a></li>
+                        <li><a href="#">최근본상품</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+<section class="search">
+      <form>
+      <h1><input type="button" value="Search"></h1>
+    <h2><input type="text"></h2>
+    </form>      
+
+        </section>
+
+
+
+
+            <!--메인비주얼 & 백그라운드-->
+
+        </div>
+
+        <div class="abs_center">
+            <div class="border_top"></div>
+            <section id="visual">
+                <div class="visual_img1"></div>
+                <div class="visual_img2"></div>
+                <div class="visual_img3"></div>
+                <div class="visual_img4"></div>
+                <div class="visual_img5"></div>
+            </section>
+        </div>
+
+        <div class="main_bg1"></div>
+        <div class="main_bg2"></div>
+        <div class="main_bg3"></div>
+        <div class="main_bg4"></div>
+   
+     
+
+
+
+
+    </header>
+    
+  
+    
+    
+    <!--사이드메뉴------------------------------------->
+<div id="hidden_menu">
+    <div class="hidden_box">
+       
+    <div class="hidden1"><p><a href="basket.html"><img src="images/main/hiden_icon1.png" alt="장바구니 아이콘"><br>장바구니<br>2</a></p></div>
+        
+    <div class="hidden2"><p><img src="images/main/hiden_icon2.png" alt="시계 아이콘"><br>최근본상품</p>
+        <div class="item">
+        <img src="images/main/img1.png" alt="#" width="60px">
+        <img src="images/main/img2.png" alt="#" width="60px">
+        <img src="images/main/img3.png" alt="#" width="60px">
+        <img src="images/main/img4.png" alt="#" width="60px">
+        </div></div>
+        
+    <div class="top"><p><a href="#top">TOP</a></p></div>
+    <div class="down"><p><a href="#footer">DOWN</a></p></div>
+    
+</div>
+    </div>
+
+<!--cs---------------------------------------->
+    <section id="cs">
+        <div class="closs_button"><img src="images/main/phone_icon-01.png" alt="닫기버튼" width="60px"></div>
+        
+          
+        
+   <div class="cs_top"><p>레시피라이브 1:1 상담</p></div>
+
+        
+             
+        <div class="cs_table">
+            
+     
+<h1>무엇을 상담해 드릴까요?</h1>
+<select class="select">
+<option>상품문의</option>
+<option>배송문의</option>
+<option>반품문의</option>
+</select>
+   <h2>상담 내용을 입력해 주세요</h2>
+    <textarea></textarea>  
+    <input type="file" class="file">
+    <input type="submit" value="전송" class="submit">
+    <input type="reset" class="reset">
+            
+     
+            <p>고객센터 : 1577-1234</p>
+            <div class="cs_bottom"></div>
+      </div>
+                 <div class="closs_button2"><img src="images/main/phone_icon-01.png" alt="닫기버튼" width="60px"></div>
+    </section>
+    
+    
+    
+    
+    
+    
+    <!--신상 & 베스트 & 할인메뉴-->
+
+    <section id="slid_menu">
+        <div class="slid_menu_inner">
+
+            <div class="menu_txt1">
+            <p><a href="#"><span>NEW</span> ARRIVAL</a></p>
+                   </div>
+
+
+           
+           
+      
+                  <div class="slid_menu1">
+                    <div class="img1">
+                    <a href="#"><img src="images/main/new_menu1.jpg" alt="매콤낚지덮밥" width="234px" height="293px"></a>
+                
+                    </div>
+                  
+
+                    <div class="txt">
+                        <h5>★New★<br>매콤낚지덮밥</h5>
+                        <p><span class="sale">4,000<span>원</span></span>
+                            <span class="money">3,600<span>원</span></span></p>
+
+                    </div>
+                      
+                </div>
+                
+               
+                <div class="slid_menu2">
+                    <div class="img2">
+                    <a href="#"><img src="images/main/new_menu2.jpg" alt="버섯새우리조또" width="234px" height="293px"></a>
+                    </div>
+                   
+
+                    <div class="txt">
+                        <h5>★New★<br>버섯리조또</h5>
+                        <p><span class="sale">4,000<span>원</span></span>
+                            <span class="money">3,600<span>원</span></span></p>
+
+                    </div>
+                </div>
+                
+                 
+                <div class="slid_menu3">
+                    <div class="img3">
+                    <a href="#"><img src="images/main/new_menu3.jpg" alt="소불고기" width="234px" height="293px"></a>
+                    </div>
+                  
+
+                    <div class="txt">
+                        <h5>★New★<br>소불고기</h5>
+                        <p><span class="sale">5,000<span>원</span></span>
+                            <span class="money">4,500<span>원</span></span></p>
+
+                    </div>
+                </div>
+                
+    
+                <div class="slid_menu4">
+                    <div class="img4">
+                    <a href=""><img src="images/main/new_menu4.jpg" alt="새우볶음밥" width="234px" height="293px"></a>
+                    </div>
+                  
+
+                    <div class="txt">
+                        <h5>★New★<br>새우볶음밥</h5>
+                        <p><span class="sale">4,500<span>원</span></span>
+                            <span class="money">4,000<span>원</span></span></p>
+
+                    </div>
+                </div>
+        <!---------------2번째----------------------->    
+              
+            <hr>
+             <div class="menu_txt2">
+            <p><a href="#"><span>B</span>EST</a></p>
+                   </div>
+            
+            
+                  <div class="slid_menu1">
+                    <div class="img1">
+                    <a href="#"><img src="images/main/best_menu1.jpg" alt="밀푀유나베" width="234px" height="293px"></a>
+                    </div>
+                  
+
+                    <div class="txt">
+                        <h5>★Best★<br>밀푀유나베</h5>
+                        <p><span class="sale">5,000<span>원</span></span>
+                            <span class="money">4,750<span>원</span></span></p>
+
+                    </div>
+                </div>
+                
+               
+                <div class="slid_menu2">
+                    <div class="img2">
+                    <a href="#"><img src="images/main/best_menu2.jpg" alt="오야꼬동" width="234px" height="293px"></a>
+                    </div>
+                   
+
+                    <div class="txt">
+                        <h5>★Best★<br>오야꼬동</h5>
+                        <p><span class="sale">4,000<span>원</span></span>
+                            <span class="money">3,800<span>원</span></span></p>
+
+                    </div>
+                </div>
+                
+                 
+                <div class="slid_menu3">
+                    <div class="img3">
+                    <a href="#"><img src="images/main/best_menu3.jpg" alt="참치김치찌개" width="234px" height="293px"></a>
+                    </div>
+                  
+
+                    <div class="txt">
+                        <h5>★Best★<br>참치김치찌개</h5>
+                        <p><span class="sale">4,500<span>원</span></span>
+                            <span class="money">4,250<span>원</span></span></p>
+
+                    </div>
+                </div>
+                
+    
+                <div class="slid_menu4">
+                    <div class="img4">
+                    <a href="#"><img src="images/main/best_menu4.jpg" alt="소고기미역국" width="234px" height="293px"></a>
+                    </div>
+                  
+
+                    <div class="txt">
+                        <h5>★Best★<br>소고기미역국</h5>
+                        <p><span class="sale">4,500<span>원</span></span>
+                            <span class="money">4,250<span>원</span></span></p>
+
+                    </div>
+                </div>
+            
+            
+            <hr>
+            
+                  <div class="slid_menu1">
+                    <div class="img1">
+                    <a href="#"><img src="images/main/best_menu5.jpg" alt="얼큰순두부" width="234px" height="293px"></a>
+                    </div>
+                  
+
+                    <div class="txt">
+                        <h5>★Best★<br>얼큰순두부</h5>
+                        <p><span class="sale">4,000<span>원</span></span>
+                            <span class="money">3,800<span>원</span></span></p>
+
+                    </div>
+                </div>
+                
+               
+                <div class="slid_menu2">
+                    <div class="img2">
+                    <a href="#"><img src="images/main/best_menu6.jpg" alt="고추장찌개" width="234px" height="293px"></a>
+                    </div>
+                   
+
+                    <div class="txt">
+                        <h5>★Best★<br>고추장찌개</h5>
+                        <p><span class="sale">4,500<span>원</span></span>
+                            <span class="money">4,200<span>원</span></span></p>
+
+                    </div>
+                </div>
+                
+                 
+                <div class="slid_menu3">
+                    <div class="img3">
+                    <a href="#"><img src="images/main/best_menu7.jpg" alt="묵은지김치찌개" width="234px" height="293px"></a>
+                    </div>
+                  
+
+                    <div class="txt">
+                        <h5>★Best★<br>묵은지김치찜</h5>
+                        <p><span class="sale">4,500<span>원</span></span>
+                            <span class="money">4,200<span>원</span></span></p>
+
+                    </div>
+                </div>
+                
+    
+                <div class="slid_menu4">
+                    <div class="img4">
+                    <a href="#"><img src="images/main/best_menu8.jpg" alt="짬뽕탕" width="234px" height="293px"></a>
+                    </div>
+                  
+
+                    <div class="txt">
+                        <h5>★Best★<br>짬뽕탕</h5>
+                        <p><span class="sale">4,000<span>원</span></span>
+                            <span class="money">3,800<span>원</span></span></p>
+
+                    </div>
+                </div>
+   <hr>
+                
+              <!---------------3번째-----------------------> 
+            
+             <div class="menu_txt3">
+            <p><a href="#"> <span>SPECIAL</span> SALE</a></p>
+                   </div>
+            
+                  <div class="slid_menu1">
+                    <div class="img1">
+                    <a href="#"><img src="images/main/menu1.png" alt="오징어볶음" width="234px" height="293px">    <h4>SALE<br>20%</h4></a>
+                    </div>
+                  
+
+                    <div class="txt">
+                        <h5>★금주특가★<br>오징어볶음</h5>
+                        <p><span class="sale">3,500<span>원</span></span>
+                            <span class="money">2,800<span>원</span></span></p>
+
+                    </div>
+                </div>
+                
+               
+                <div class="slid_menu2">
+                    <div class="img2">
+                    <a href="#"><img src="images/main/menu2.png" alt="김치제육볶음" width="234px" height="293px">    <h4>SALE<br>20%</h4></a>
+                    </div>
+                   
+
+                    <div class="txt">
+                        <h5>★금주특가★<br>김치제육볶음</h5>
+                        <p><span class="sale">4,000<span>원</span></span>
+                            <span class="money">3,200<span>원</span></span></p>
+
+                    </div>
+                </div>
+                
+                 
+                <div class="slid_menu3">
+                    <div class="img3">
+                    <a href="#"><img src="images/main/menu3.png" alt="김오이소박이" width="234px" height="293px">    <h4>SALE<br>20%</h4></a>
+                    </div>
+                  
+
+                    <div class="txt">
+                        <h5>★금주특가★<br>오이소박이</h5>
+                        <p><span class="sale">3,000<span>원</span></span>
+                            <span class="money">2,400<span>원</span></span></p>
+
+                    </div>
+                </div>
+                
+    
+                <div class="slid_menu4">
+                    <div class="img4">
+                    <a href="#"><img src="images/main/menu4.png" alt="마늘쫑볶음" width="234px" height="293px">    <h4>SALE<br>20%</h4></a>
+                    </div>
+                  
+
+                    <div class="txt">
+                        <h5>★금주특가★<br>마늘쫑볶음</h5>
+                        <p><span class="sale">3,000<span>원</span></span>
+                            <span class="money">2,400<span>원</span></span></p>
+
+                    </div>
+                </div>
+                
+                    
+            
+        </div>
+    </section>
+
+
+
+    <!--세계음식--------------------------------------->
+    <section id="world">
+        <div class="world_inner">
+
+            <div class="left">
+                <div class="world_menu1">
+                    <a href="#"><img src="images/main/world1.png" alt="베트남">
+                        <div>
+                            <p>VIETNAM</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="world_menu2">
+                    <a href="#"><img src="images/main/world2.png" alt="중국">
+                        <div>
+                            <p>CHINA</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="world_menu3">
+                    <a href="#"><img src="images/main/world3.png" alt="이탈리아">
+                        <div>
+                            <p>ITALIA</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="world_menu4">
+                    <a href="#"><img src="images/main/world4.png" alt="멕시코">
+                        <div>
+                            <p>MEXICO</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="right">
+                <h1><img src="images/main/world_map.png" alt="세계지도">
+                    <p><span>WORLD RECIPE</span><br>
+                        다채로운 맛의 향연<br>
+                        세계각국의 맛있는 요리가<br>
+                        우리집 식탁으로</p>
+                    <div></div>
+                </h1>
+            </div>
+        </div>
+
+
+
+        <!--서브베너-->
+        <section id="banner">
+            <div class="banner_inner">
+
+
+
+                <div class="sub_banner_title"><img src="images/main/Group%20368.png" alt="서브타이틀" width="100px;"></div>
+                <h5><span>준</span>비는 저희가 하겠습니다<br> 요리가 <span>즐</span>거워진다</h5>
+                <h6><img src="images/main/sub_banner.png" alt="된장찌개정도는 할 수 있잖아">
+                </h6>
+            </div>
+
+        </section>
+    </section>
+
+
+
+
+
+    <!--움짤베너-->
+    <div id="sub_banner2">
+        <img src="images/main/sub_banner2.gif" alt="리틀포레스트" ; width="100%;" height="600px;">
+        <h3>ANY ONE CAN COOK</h3>
+        <div class="bg"></div>
+
+    </div>
+
+
+    <!--어플출시-->
+    <section id="sub_banner3">
+        <div class="sub_inner">
+            <p><img src="images/main/main_sub_banner.png" alt="어플출시" ;></p>
+
+        </div>
+
+    </section>
+
+
+
+    <!--풋터영역-->
+    <footer id="footer">
+        <div class="footer_inner">
+            <div class="left">
+                <a href="index.html"><img src="images/main/footer_logo.png" alt="풋터로고"></a>
+                <address>
+                    대표이사 : 홍 길 동 / 서울특별시 강남구 삼성로 518<br>
+                    개인정보관리 책임자 : recipe live 지원본부 김 지 훈 / 대표번호 : 1899-1234<br>
+                    대표메일주소 : recipelive.gmail.com / Tel : 02-123-4567 / Fax : 02-123-4568<br>
+                    통신판매업신고 : 제2017-서울강남-02297호<br>
+                    사업자등록번호 : 138-85-1961 / 사업자정보 확인<br>
+                    <br><br>
+
+                    copyright ⓒ recipelive design
+
+                </address>
+            </div>
+
+            <div class="footer_right">
+                <div class="footer_icon1">
+                    <img src="images/main/footer_icon1.png" alt="아이콘1" width="90px" height="90px">
+                    <p><span>친절상담<br>
+                            1577-1234</span><br>평일:09:30~18:00<br>
+                        (점심시간:12:30~13:30)<br>
+                        토요일:09:30~12:30<br>
+                        일요일,공휴일 휴무</p>
+                </div>
+                <div class="footer_icon2">
+                    <img src="images/main/footer_icon2.png" alt="아이콘2" width="90px" height="90px">
+                    <p><span>개인정보<br>처리방침<br>&<br>이용약관</span><br><span class="pp1"><a href="">자세히보기</a></span></p>
+                </div>
+
+
+
+                <div class="footer_icon3">
+                    <img src="images/main/footer_icon3.png" alt="아이콘3" width="90px" height="90px">
+                    <p><span>취소<br>&<br>환불규정</span><br><br>
+                        <sapn class="pp2"><a href="">자세히보기</a></sapn>
+                    </p>
+                </div>
+
+
+                <div class="footer_icon4">
+                    <img src="images/main/footer_icon4.png" alt="아이콘4" width="90px" height="90px">
+                    <p><span>배송안내</span><br>배송 불가능한 지역이 <br>있으니 주문전 확인, <br>문의 바랍니다<br><span class="pp3"><a href="#">자세히보기</a></span></p>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </footer>
+
+
+ 
+
+</body>
+    
+
+
+</html>
